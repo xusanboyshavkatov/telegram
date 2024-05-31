@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sayt">
+        <header>
+            <div class="navbar1">
+                <h2>9:41</h2>
+                <div class="icon">
+                    <img src="img/Mobile Signal.svg" alt="">
+                    <img src="img/Wifi.png" alt="">
+                    <img src="img/Vector.png" alt="">
+                </div>
+            </div>
+            <div class="navbar2">
+                <h1 class="Cancel">Cancel</h1>
+                <h1 class="Next" onclick="Next()">Next</h1>
+            </div>
+
+        </header>
+        <div class="Your_Phone">
+            <h1>Your Phone</h1>
+            <h3>Please confirm your country code and enter your phone number.</h3>
+        </div>
+        <form class="form">
+            <select onchange="country()">
+                <option name="us">USA</option>
+                <option name="uz">UZB</option>
+                <option name="ru">RUS</option>
+                <option name="kz">KZ</option>
+            </select><br>
+            <div class="form_number">
+                <input type="text" class="country_code" readonly value="+1">
+                <input type="text" class="country_number" placeholder="Your phone number">
+            </div>
+        </form>
+    </div>
+<!-- 2-page -->
+    <div class="sayt2">
+        <header>
+            <div class="navbar1_2">
+                <h2>9:42</h2>
+                <div class="icon">
+                    <img src="img/Mobile Signal.svg">
+                    <img src="img/Wifi.png">
+                    <img src="img/Vector.png">
+                </div>
+            </div>
+            <div class="navbar2_2">
+                <h1 class="back" onclick="back()">Back</h1>
+            </div>
+
+        </header>
+        <div class="Your_Phone_2">
+            <!-- <h1 class="usernumber">Your Phone</h1> -->
+            <center>
+                <img src="img/icons8-message-50.png" class="Your_Phone_2_message_cion">
+            </center>
+                <h3 class="userinputnumber"></h3>
+        </div>
+            <form class="verfication">
+                <input type="number" class="verfication_code_input" placeholder="Verfication Code"><br>
+                <button class="Chek" onclick="chek()">Check</button>
+            </form>
+            <h1 class="verfication_code_error"></h1>
+
+    </div>
+
+    <div class="sayt3">
+        <img src="img/Telegram Chats.png">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
